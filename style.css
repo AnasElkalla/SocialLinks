@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("./assets/fonts/font.ttf") format("truetype");
+}
+* {
+  font-family: "MyFont";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+body {
+  background: hsl(0, 0%, 8%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+article {
+  background: hsl(0, 0%, 12%);
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  h1 {
+    font-size: 20px;
+  }
+  h1 + p {
+    color: hsl(75, 94%, 57%);
+  }
+  p:last-of-type {
+    font-weight: 400;
+  }
+  p {
+    font-size: 12px;
+  }
+  img {
+    width: 20%;
+    border-radius: 50%;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+button {
+  background: hsl(0, 0%, 20%);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+div {
+  width: 100%;
+}
+button:hover {
+  background: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+@media (max-width: 375px) {
+  article {
+    width: 90%;
+    height: fit-content;
+  }
+  header img {
+    width: 15%;
+  }
+  header h1 {
+    font-size: 25px;
+  }
+  header p {
+    font-size: 15px;
+  }
+  button {
+    font-size: 15px;
+    padding: 15px;
+  }
+}
+.attribution {
+  position: absolute;
+  bottom: 5px;
+}
