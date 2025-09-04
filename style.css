@@ -28,6 +28,7 @@ article {
   flex-direction: column;
   justify-content: center;
   height: fit-content;
+  margin-top:20px;
 }
 header {
   display: flex;
@@ -98,3 +99,4 @@ button:hover {
   position: absolute;
   bottom: 5px;
 }
+
